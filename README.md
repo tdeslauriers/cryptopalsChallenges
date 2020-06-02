@@ -1,1 +1,1 @@
-**Working my way thur challenges from** [cryptopals.com](https://cryptopals.com/).
+**Working my way thru challenges from** [cryptopals.com](https://cryptopals.com/).
