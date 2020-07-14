@@ -61,8 +61,9 @@ func main() {
 		return ciphs[i].freq > ciphs[j].freq
 	})
 
+	fmt.Println(pt)
 	fmt.Println("Top four results with highest letter frequency Scores:")
-	for i := range ciphs[:4] {
+	for i := range ciphs[:8] {
 		fmt.Printf("XOr'ing Key: %q, Frequency Score: %f, Resulting output: %q\n", ciphs[i].key, ciphs[i].freq, ciphs[i].message)
 	}
 }
