@@ -17,10 +17,11 @@ func main() {
 
 func repeatXor(t, k []byte) (c []byte) {
 
+	c = make([]byte, len(t))
 	i := 0
 	for j := 0; j < len(t); j++ {
 
-		c = append(c, t[j]^k[i])
+		c[j] = t[j] ^ k[i]
 		if i == len(k)-1 {
 			i = 0
 		} else {
