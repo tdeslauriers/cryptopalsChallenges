@@ -54,7 +54,7 @@ func decryptAesEcb(ct, k []byte) []byte {
 
 	for i := 0; i < len(ct); i += block.BlockSize() {
 
-		block.Decrypt(ct[i:i+16], ct[i:i+16])
+		block.Decrypt(ct[i:i+block.BlockSize()], ct[i:i+block.BlockSize()])
 	}
 
 	return ct
